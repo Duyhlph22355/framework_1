@@ -1,0 +1,23 @@
+<section id="home-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-4" *ngFor="let product of products">
+        <div class="card" style="width: 18rem">
+          <img src="{{ product.imgUrl }}" alt="{{ product.name }}" />
+          <div class="card-body">
+            <h5 class="card-title">{{ product.name }}</h5>
+            <p class="card-text">
+              {{ product.price }}
+            </p>
+            <!-- <button class="btn btn-primary" (click)="show1 = !show1">
+              {{ show ? "hide" : "show" }}
+            </button>
+            <p *ngIf="show" class="card-text">
+              {{ product.description }}
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

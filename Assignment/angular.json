@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "WD17304": {
+    "Assignment": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/wd17304",
+            "outputPath": "dist/assignment",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -30,9 +30,10 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": ["./node_modules/bootstrap/dist/js/bootstrap.min.js"]
           },
           "configurations": {
             "production": {
@@ -65,10 +66,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "WD17304:build:production"
+              "browserTarget": "Assignment:build:production"
             },
             "development": {
-              "browserTarget": "WD17304:build:development"
+              "browserTarget": "Assignment:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +77,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "WD17304:build"
+            "browserTarget": "Assignment:build"
           }
         },
         "test": {
@@ -102,6 +103,6 @@
     }
   },
   "cli": {
-    "analytics": "69ae34f7-0c6c-4519-a1c1-db8b4d80b3b9"
+    "analytics": "022f80d2-5184-49de-85cd-3077a8844952"
   }
 }
