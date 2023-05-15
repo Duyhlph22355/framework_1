@@ -7,10 +7,10 @@ import { Product } from 'src/app/common/product';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
-  show1 = true;
-  // show(id) {
-
-  // }
+  show = {}
+  show_product (product: Product) {
+    this.show = product 
+  }
   products: Product[] = [
     {
       id: '1',

@@ -9,12 +9,12 @@
             <p class="card-text">
               {{ product.price }}
             </p>
-            <!-- <button class="btn btn-primary" (click)="show1 = !show1">
-              {{ show ? "hide" : "show" }}
+            <button class="btn btn-primary" (click)="show_product(product)">
+              Show
             </button>
-            <p *ngIf="show" class="card-text">
+            <p *ngIf="show === product" class="card-text">
               {{ product.description }}
-            </p> -->
+            </p>
           </div>
         </div>
       </div>
