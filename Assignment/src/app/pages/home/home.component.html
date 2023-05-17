@@ -50,29 +50,30 @@
 
 <div class="grid grid-cols-4 gap-3 mt-7">
   <div *ngFor="let product of products">
-    <a [routerLink]="['/product/{{product.id}}']" class="group relative block overflow-hidden">
-    
-      <img src="{{ product.imgUrl }}" alt="{{ product.name }}" class="h-full w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"/>
-    
-      <div class="relative border border-gray-100 bg-white p-6">
-        <span
-          class="whitespace-nowrap bg-teal-600 px-3 py-1.5 text-xs text-white font-medium"
-        >
-          New
-        </span>
-    
-        <h3 class="mt-4 text-lg font-medium text-gray-900">{{product.name}}</h3>
-    
-        <p class="mt-1.5 text-sm">{{product.price}} đ</p>
-    
-        <form class="mt-4">
-          <button
-            class="block w-full rounded bg-teal-600 p-4 text-sm text-white font-medium transition hover:scale-105"
+    <div class="group relative block overflow-hidden relative border border-gray-100 bg-white p-6">
+      <a [routerLink]="['/product/{{product.id}}']" >
+
+        <img src="{{ product.imgUrl }}" alt="{{ product.name }}" class="h-full w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"/>
+
+        <div class="mt-3">
+          <span
+            class=" whitespace-nowrap bg-teal-600 px-3 py-1.5 text-xs text-white font-medium"
           >
-            Add to Cart
-          </button>
-        </form>
-      </div>
-    </a>
+            New
+          </span>
+
+          <h3 class="mt-4 text-lg font-medium text-gray-900">{{product.name}}</h3>
+
+          <p class="mt-1.5 text-sm">{{product.price}} đ</p>
+
+
+        </div>
+      </a>
+      <button
+              class=" mt-4 block w-full rounded bg-teal-600 p-4 text-sm text-white font-medium transition hover:scale-105"
+            >
+              <a [routerLink]="['/cart']">Add to Cart</a>
+            </button>
+    </div>
   </div>
 </div>
