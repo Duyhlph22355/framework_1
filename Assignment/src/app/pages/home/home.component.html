@@ -1,23 +1,78 @@
-<section id="home-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-4" *ngFor="let product of products">
-        <div class="card" style="width: 18rem">
-          <img src="{{ product.imgUrl }}" alt="{{ product.name }}" />
-          <div class="card-body">
-            <h5 class="card-title">{{ product.name }}</h5>
-            <p class="card-text">
-              {{ product.price }}
-            </p>
-            <button class="btn btn-primary" (click)="show_product(product)">
-              Show
-            </button>
-            <p *ngIf="show === product" class="card-text">
-              {{ product.description }}
-            </p>
-          </div>
+<section class="bg-gray-50">
+  <div class="p-8 md:p-12 lg:px-16 lg:py-24">
+    <div class="mx-auto max-w-lg text-center">
+      <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
+        ARISTINO SUMMER COLLECTION 2023
+      </h2>
+
+      <p class="hidden text-gray-500 sm:mt-4 sm:block">
+        Lấy cảm hứng cuộc sống thường nhật của doanh nhân từ công ty đến sân golf, những thiết kế trong SUMMER COLLECTION 2023 của Aristino hướng đến tính ứng dụng và mới mẻ trong từng chi tiết.
+      </p>
+    </div>
+
+    <div class="mx-auto mt-8 max-w-xl">
+      <form action="#" class="sm:flex sm:gap-4">
+        <div class="sm:flex-1">
+          <label for="email" class="sr-only">Email</label>
+
+          <input
+            type="email"
+            placeholder="Email"
+            class="w-full rounded-md border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none focus:ring focus:ring-yellow-400"
+          />
         </div>
-      </div>
+
+        <button
+          type="submit"
+          class="group mt-4 flex w-full items-center justify-center gap-2 rounded-md bg-teal-600 px-5 py-3 text-white transition focus:outline-none focus:ring focus:ring-yellow-400 sm:mt-0 sm:w-auto"
+        >
+          <span class="text-sm font-medium"> Đăng Ký </span>
+
+          <svg
+            class="h-5 w-5 rtl:rotate-180"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
+        </button>
+      </form>
     </div>
   </div>
 </section>
+
+<div class="grid grid-cols-4 gap-3 mt-7">
+  <div *ngFor="let product of products">
+    <a [routerLink]="['/product/{{product.id}}']" class="group relative block overflow-hidden">
+    
+      <img src="{{ product.imgUrl }}" alt="{{ product.name }}" class="h-full w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"/>
+    
+      <div class="relative border border-gray-100 bg-white p-6">
+        <span
+          class="whitespace-nowrap bg-teal-600 px-3 py-1.5 text-xs text-white font-medium"
+        >
+          New
+        </span>
+    
+        <h3 class="mt-4 text-lg font-medium text-gray-900">{{product.name}}</h3>
+    
+        <p class="mt-1.5 text-sm">{{product.price}} đ</p>
+    
+        <form class="mt-4">
+          <button
+            class="block w-full rounded bg-teal-600 p-4 text-sm text-white font-medium transition hover:scale-105"
+          >
+            Add to Cart
+          </button>
+        </form>
+      </div>
+    </a>
+  </div>
+</div>

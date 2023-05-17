@@ -14,7 +14,7 @@ export class HomeComponent {
   products: Product[] = [
     {
       id: '1',
-      name: 'Product 1',
+      name: 'Mũ',
       price: 100,
       description: 'lorem ipsum dolor sit amet, consectetur adip',
       imgUrl:
@@ -22,7 +22,7 @@ export class HomeComponent {
     },
     {
       id: '2',
-      name: 'Ao khoac',
+      name: 'Áo Phông',
       price: 200,
       description: 'lorem ipsum',
       imgUrl:
@@ -30,12 +30,22 @@ export class HomeComponent {
     },
     {
       id: '3',
-      name: 'Quan bo',
+      name: 'Quần Bò',
       price: 300,
       description:
         'Product 1 description Product 1 descriptionProduct 1 descriptionProduct 1 description',
       imgUrl:
         'https://file.hstatic.net/200000053174/file/cac-loai-ao-vest-nam_07a5c0b0bfee420b8edc3225a9529187.jpg',
     },
+    {
+      id: '4',
+      name: 'Giày',
+      price: 350,
+      description:
+        'Product 1 description Product 1 descriptionProduct 1 descriptionProduct 1 description',
+      imgUrl:
+        'https://file.hstatic.net/200000053174/file/cac-loai-ao-vest-nam_07a5c0b0bfee420b8edc3225a9529187.jpg',
+    },
+    
   ];
 }

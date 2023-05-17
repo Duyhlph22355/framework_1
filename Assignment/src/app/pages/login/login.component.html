@@ -1,42 +1,110 @@
-<p>login works!</p>
-<section class="vh-100">
-    <div class="container-fluid h-custom">
-      <div class="row d-flex justify-content-center align-items-center h-100">
-        <div class="col-md-9 col-lg-6 col-xl-5">
-          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
-            class="img-fluid" alt="Sample image">
-        </div>
-        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-          <form>
-            <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
-            <!-- Email input -->
-            <div class="form-outline mb-4">
-              <label class="form-label" for="form3Example3">Email address</label>
-              <input type="email" id="form3Example3" class="form-control form-control-lg"
-                placeholder="Enter a valid email address" />
-            </div>
-  
-            <!-- Password input -->
-            <div class="form-outline mb-3">
-              <label class="form-label" for="form3Example4">Password</label>
-              <input type="password" id="form3Example4" class="form-control form-control-lg"
-                placeholder="Enter password" />
-            </div>
-  
-            <div class="d-flex justify-content-between align-items-center">
-              <!-- Checkbox -->
-              <a href="#!" class="text-body">Forgot password?</a>
-            </div>
-  
-            <div class="text-center text-lg-start mt-4 pt-2">
-              <button type="button" class="btn btn-primary btn-lg"
-                style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
-              <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a [routerLink]="['/register']"
-                  class="link-danger">Register</a></p>
-            </div>
-  
-          </form>
+<!--
+  Heads up! 👋
+
+  Plugins:
+    - @tailwindcss/forms
+-->
+
+<section class="relative flex flex-wrap lg:h-screen lg:items-center">
+  <div class="w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24">
+    <div class="mx-auto max-w-lg text-center">
+      <h1 class="text-2xl font-bold sm:text-3xl">Bắt đầu từ hôm nay!</h1>
+
+      <p class="mt-4 text-gray-500">
+        Bản thân công ty là một công ty rất thành công. Và con người tự do không có sai lầm đó cũng như lỗi lầm của bản thân, mà do đó là lỗi của chúng ta!
+      </p>
+    </div>
+
+    <form (ngSubmit)="onSubmit()" class="mx-auto mb-0 mt-8 max-w-md space-y-4">
+      <div>
+        <label for="email" class="sr-only">Email</label>
+
+        <div class="relative">
+          <input
+            type="email"
+            name="username"
+            [(ngModel)]="credentials.username"
+            class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+            placeholder="Email"
+          />
+
+          <span class="absolute inset-y-0 end-0 grid place-content-center px-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 text-gray-400"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
+              />
+            </svg>
+          </span>
         </div>
       </div>
-    </div>
-  </section>
+
+      <div>
+        <label for="password" class="sr-only">Mật Khẩu</label>
+
+        <div class="relative">
+          <input
+            type="password"
+            name="password"
+            [(ngModel)]="credentials.password"
+            class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+            placeholder="Mật khẩu"
+          />
+
+          <span class="absolute inset-y-0 end-0 grid place-content-center px-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 text-gray-400"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-between">
+        <p class="text-sm text-gray-500">
+          Bạn chưa có tài khoản?
+          <a class="underline" href="">Đăng ký</a>
+        </p>
+
+        <button
+          type="submit"
+          class="inline-block rounded-lg bg-blue-500 px-5 py-3 text-sm font-medium text-white"
+        >
+          Đăng Nhập
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div class="relative h-64 w-full sm:h-96 lg:h-full lg:w-1/2">
+    <img
+      alt="Welcome"
+      src="https://images.unsplash.com/photo-1630450202872-e0829c9d6172?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+      class="absolute inset-0 h-full w-full object-cover"
+    />
+  </div>
+</section>
