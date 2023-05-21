@@ -9,7 +9,7 @@ import { Product } from 'src/app/common/product';
 export class HomeComponent {
   show = {}
   show_product (product: Product) {
-    this.show = product 
+    this.show = product
   }
   products: Product[] = [
     {
@@ -46,6 +46,6 @@ export class HomeComponent {
       imgUrl:
         'https://file.hstatic.net/200000053174/file/cac-loai-ao-vest-nam_07a5c0b0bfee420b8edc3225a9529187.jpg',
     },
-    
+
   ];
 }
