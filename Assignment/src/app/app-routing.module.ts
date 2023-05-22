@@ -8,6 +8,8 @@ import { LayoutComponent } from './pages/user/layout/layout.component';
 import { LayoutAdminComponent } from './pages/admin/layout-admin/layout-admin.component';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
 import { ProductsAdminComponent } from './pages/admin/products-admin/products-admin.component';
+import { LoginAdminComponent } from './pages/admin/login-admin/login-admin.component';
+import { CartComponent } from './pages/user/cart/cart.component';
 
 const routes: Routes = [
   {
@@ -18,12 +20,14 @@ const routes: Routes = [
       {path: "login", component: LoginComponent},
       {path: "register", component: RegisterComponent},
       {path: "product/:id", component: ProductDetailComponent},
+      {path: "cart", component: CartComponent},
     ]
   },
   {
     path: "admin", component: LayoutAdminComponent,
     children: [
-      {path: "", component: DashboardComponent},
+      {path: "", component: LoginAdminComponent},
+      {path: "home", component: DashboardComponent},
       {path: "products", component: ProductsAdminComponent},
     ]
   }

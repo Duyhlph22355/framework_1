@@ -17,6 +17,9 @@ import { AdminHeaderComponent } from './components/admin/admin-header/admin-head
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { LayoutAdminComponent } from './pages/admin/layout-admin/layout-admin.component';
 import { ProductsAdminComponent } from './pages/admin/products-admin/products-admin.component';
+import { LoginAdminComponent } from './pages/admin/login-admin/login-admin.component';
+import { AdminVerticalComponent } from './components/admin/admin-vertical/admin-vertical.component';
+import { CartComponent } from './pages/user/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { ProductsAdminComponent } from './pages/admin/products-admin/products-ad
     AdminHeaderComponent,
     NotFoundComponent,
     LayoutAdminComponent,
-    ProductsAdminComponent
+    ProductsAdminComponent,
+    LoginAdminComponent,
+    AdminVerticalComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

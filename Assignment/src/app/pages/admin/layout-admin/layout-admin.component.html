@@ -1,1 +1,11 @@
-<p>layout-admin works!</p>
+<app-admin-header></app-admin-header>
+<div class='flex flex-row'>
+  <div class='w-2/12'>
+    <app-admin-vertical></app-admin-vertical>
+  </div>
+  <div class='w-10/12'>
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<app-admin-footer></app-admin-footer>
