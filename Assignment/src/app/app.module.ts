@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -20,6 +21,8 @@ import { ProductsAdminComponent } from './pages/admin/products-admin/products-ad
 import { LoginAdminComponent } from './pages/admin/login-admin/login-admin.component';
 import { AdminVerticalComponent } from './components/admin/admin-vertical/admin-vertical.component';
 import { CartComponent } from './pages/user/cart/cart.component';
+
+import { ChartModule } from 'primeng/chart';
 
 @NgModule({
   declarations: [
@@ -45,7 +48,9 @@ import { CartComponent } from './pages/user/cart/cart.component';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    ChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
