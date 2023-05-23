@@ -49,6 +49,29 @@
       </div>
 
       <div class="flex items-center gap-4">
+        <span class="border-e border-e-gray-100">
+          <a
+            [routerLink]="['/cart']"
+            class="grid h-16 w-16 place-content-center border-b-4 border-transparent hover:border-teal-500"
+          >
+            <svg
+              class="h-4 w-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+              />
+            </svg>
+
+            <span class="sr-only">Cart</span>
+          </a>
+        </span>
         <div class="sm:flex sm:gap-4">
           <a class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow" [routerLink]="['/login']">
             Đăng Nhập

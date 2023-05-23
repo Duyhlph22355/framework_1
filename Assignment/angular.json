@@ -35,8 +35,7 @@
               "node_modules/primeng/resources/primeng.min.css"
             ],
             "scripts": [
-              "node_modules/alpinejs/dist/alpine.js",
-              "../node_modules/chart.js/dist/chart.js"
+              "/node_modules/chart.js/dist/chart.js"
             ]
           },
           "configurations": {
