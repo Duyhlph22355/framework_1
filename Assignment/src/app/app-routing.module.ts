@@ -10,6 +10,7 @@ import { DashboardComponent } from './pages/admin/dashboard/dashboard.component'
 import { ProductsAdminComponent } from './pages/admin/products-admin/products-admin.component';
 import { LoginAdminComponent } from './pages/admin/login-admin/login-admin.component';
 import { CartComponent } from './pages/user/cart/cart.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 const routes: Routes = [
   {
@@ -30,7 +31,8 @@ const routes: Routes = [
       {path: "home", component: DashboardComponent},
       {path: "products", component: ProductsAdminComponent},
     ]
-  }
+  },
+  {path:"**",component:NotFoundComponent}
 ];
 
 @NgModule({
