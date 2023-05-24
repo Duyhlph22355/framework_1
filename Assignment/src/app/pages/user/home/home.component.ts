@@ -14,11 +14,11 @@ export class HomeComponent {
   products: Product[] = [
     {
       id: '1',
-      name: 'Mũ',
+      name: 'Quần Jean',
       price: 100,
       description: 'lorem ipsum dolor sit amet, consectetur adip',
       imgUrl:
-        'https://media.coolmate.me/cdn-cgi/image/quality=80,format=auto/uploads/April2022/b5_75.jpg',
+        'https://laforce.vn/wp-content/uploads/2022/07/phoi-do-voi-quan-jean-ong-suong-mua-dong.jpg',
     },
     {
       id: '2',

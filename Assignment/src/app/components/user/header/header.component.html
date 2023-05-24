@@ -26,9 +26,9 @@
                 <a class="text-gray-500 transition hover:text-gray-500/75" (click)="isOpen = !isOpen">Sản Phẩm</a>
 
                 <ul class="absolute mt-2 bg-white shadow-md rounded-md py-2 px-3 left-[-10px] top-[35px] w-40" [class.hidden]="!isOpen">
-                  <li class="text-gray-500 transition hover: rounded-md hover:text-white hover:bg-teal-500">Thời Trang Nam</li>
-                  <li class="text-gray-500 transition hover: rounded-md hover:text-white hover:bg-teal-500 my-[10px]">Thời Trang Nữ</li>
-                  <li class="text-gray-500 transition hover: rounded-md hover:text-white hover:bg-teal-500">Thời Trang Trẻ Em</li>
+                  <li class="text-gray-500 transition hover: rounded-md hover:text-white hover:bg-teal-500"><a [routerLink]="['/product_male']">Thời Trang Nam</a></li>
+                  <li class="text-gray-500 transition hover: rounded-md hover:text-white hover:bg-teal-500 my-[10px]"><a [routerLink]="['/product_female']">Thời Trang Nữ</a></li>
+                  <li class="text-gray-500 transition hover: rounded-md hover:text-white hover:bg-teal-500"><a [routerLink]="['/product_children']">Thời Trang Trẻ Em</a></li>
                 </ul>
               </div>
             </li>

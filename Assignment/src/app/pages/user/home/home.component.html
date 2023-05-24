@@ -159,7 +159,7 @@
         <ul class="grid grid-cols-2 gap-4">
           <div  *ngFor="let product of products">
             <li>
-              <a href="#" class="block group">
+              <a [routerLink]="['/product/{{product.id}}']" class="block group">
                 <img
                   src="{{ product.imgUrl }}" alt="{{ product.name }}"
                   alt=""

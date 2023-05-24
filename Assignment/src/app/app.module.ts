@@ -23,6 +23,15 @@ import { AdminVerticalComponent } from './components/admin/admin-vertical/admin-
 import { CartComponent } from './pages/user/cart/cart.component';
 
 import { ChartModule } from 'primeng/chart';
+import { ProductMaleComponent } from './pages/user/product-male/product-male.component';
+import { ProductFemaleComponent } from './pages/user/product-female/product-female.component';
+import { ProductChildrenComponent } from './pages/user/product-children/product-children.component';
+import { DataViewModule  } from 'primeng/dataview';
+import { HttpClientModule } from '@angular/common/http';
+
+import { RatingModule } from 'primeng/rating';
+import { TagModule } from 'primeng/tag';
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -42,15 +51,24 @@ import { ChartModule } from 'primeng/chart';
     ProductsAdminComponent,
     LoginAdminComponent,
     AdminVerticalComponent,
-    CartComponent
+    CartComponent,
+    ProductMaleComponent,
+    ProductFemaleComponent,
+    ProductChildrenComponent
   ],
   imports: [
+    ButtonModule,
+    TagModule,
+    RatingModule,
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
     BrowserAnimationsModule,
-    ChartModule
+    ChartModule,
+    DataViewModule,
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

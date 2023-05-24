@@ -10,6 +10,10 @@ import { DashboardComponent } from './pages/admin/dashboard/dashboard.component'
 import { ProductsAdminComponent } from './pages/admin/products-admin/products-admin.component';
 import { LoginAdminComponent } from './pages/admin/login-admin/login-admin.component';
 import { CartComponent } from './pages/user/cart/cart.component';
+import { ProductMaleComponent } from './pages/user/product-male/product-male.component';
+import { ProductFemaleComponent } from './pages/user/product-female/product-female.component';
+import { ProductChildrenComponent } from './pages/user/product-children/product-children.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 const routes: Routes = [
   {
@@ -21,6 +25,9 @@ const routes: Routes = [
       {path: "register", component: RegisterComponent},
       {path: "product/:id", component: ProductDetailComponent},
       {path: "cart", component: CartComponent},
+      {path: "product_male", component: ProductMaleComponent},
+      {path: "product_female", component: ProductFemaleComponent},
+      {path: "product_children", component: ProductChildrenComponent},
     ]
   },
   {
@@ -30,7 +37,11 @@ const routes: Routes = [
       {path: "home", component: DashboardComponent},
       {path: "products", component: ProductsAdminComponent},
     ]
-  }
+  },
+  {
+    path: '**',
+    component: NotFoundComponent,
+  },
 ];
 
 @NgModule({
