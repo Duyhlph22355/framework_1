@@ -32,6 +32,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RatingModule } from 'primeng/rating';
 import { TagModule } from 'primeng/tag';
 import { ButtonModule } from 'primeng/button';
+import { TableModule } from 'primeng/table';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,7 @@ import { ButtonModule } from 'primeng/button';
     ChartModule,
     DataViewModule,
     HttpClientModule,
-
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
