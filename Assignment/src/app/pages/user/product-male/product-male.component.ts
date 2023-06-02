@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Product, Products } from 'src/app/common/product';
-import { ProductService } from 'src/app/common/productService';
 
 @Component({
   selector: 'app-product-male',

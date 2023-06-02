@@ -1,0 +1,23 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Áo thun nam Cotton Compact Premium trẻ trung năng động thấm hút mồ hôi co giãn 4 chiều MRM Manlywear",
+      "price": 149000,
+      "size": "L",
+      "color": "Đen",
+      "category": 1
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Thời Trang Nam"
+    }
+  ],
+  "user": {
+    "name": "Hoàng Long Duy",
+    "emial": "longduy@gmail.com",
+    "phone_number": "0987654321"
+  }
+}

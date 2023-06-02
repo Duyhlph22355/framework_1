@@ -15,7 +15,7 @@ export class ProductDetailComponent {
       price: 100,
       description: 'lorem ipsum dolor sit amet, consectetur adip',
       imgUrl:
-        'https://media.coolmate.me/cdn-cgi/image/quality=80,format=auto/uploads/April2022/b5_75.jpg',
+        'https://laforce.vn/wp-content/uploads/2022/07/phoi-do-voi-quan-jean-ong-suong-mua-dong.jpg',
     },
     {
       id: '2',
@@ -25,24 +25,51 @@ export class ProductDetailComponent {
       imgUrl:
         'https://mayvinhthanh.vn/wp-content/uploads/2021/03/pasted-image-0.png',
     },
-    // {
-    //   id: '3',
-    //   name: 'Quần Bò',
-    //   price: 300,
-    //   description:
-    //     'Product 1 description Product 1 descriptionProduct 1 descriptionProduct 1 description',
-    //   imgUrl:
-    //     'https://file.hstatic.net/200000053174/file/cac-loai-ao-vest-nam_07a5c0b0bfee420b8edc3225a9529187.jpg',
-    // },
-    // {
-    //   id: '4',
-    //   name: 'Giày',
-    //   price: 350,
-    //   description:
-    //     'Product 1 description Product 1 descriptionProduct 1 descriptionProduct 1 description',
-    //   imgUrl:
-    //     'https://file.hstatic.net/200000053174/file/cac-loai-ao-vest-nam_07a5c0b0bfee420b8edc3225a9529187.jpg',
-    // },
+    {
+      id: '3',
+      name: 'Áo Sơ Mi Nam Cộc Tay Kẻ Bambo',
+      price: 300,
+      description:
+        'Product 1 description Product 1 descriptionProduct 1 descriptionProduct 1 description',
+      imgUrl:
+        'https://bizweb.dktcdn.net/thumb/large/100/438/408/products/scm5049-kde-10.jpg?v=1677142082000',
+    },
+    {
+      id: '4',
+      name: 'Áo Polo Nam Pique Sồi',
+      price: 350,
+      description:
+        'Product 1 description Product 1 descriptionProduct 1 descriptionProduct 1 description',
+      imgUrl:
+        'https://bizweb.dktcdn.net/thumb/large/100/438/408/products/apm5393-xhd-3.jpg?v=1662358179000',
+    },
+    {
+      id: '5',
+      name: 'Áo Vest Nam Nano Công Sở Trẻ Trung',
+      price: 1150,
+      description:
+        'Product 1 description Product 1 descriptionProduct 1 descriptionProduct 1 description',
+      imgUrl:
+        'https://bizweb.dktcdn.net/thumb/large/100/438/408/products/vem4007-xnh-2.jpg?v=1666153948000',
+    },
+    {
+      id: '6',
+      name: 'Áo T-Shirt Nam Cotton USA Phiên Bản Premium',
+      price: 160,
+      description:
+        'Product 1 description Product 1 descriptionProduct 1 descriptionProduct 1 description',
+      imgUrl:
+        'https://bizweb.dktcdn.net/thumb/large/100/438/408/products/tsm5231-vag-3.jpg?v=1652520442000',
+    },
+    {
+      id: '7',
+      name: 'Áo Thun Nam Dập Chữ Nổi Cotton Usa',
+      price: 235,
+      description:
+        'Product 1 description Product 1 descriptionProduct 1 descriptionProduct 1 description',
+      imgUrl:
+        'https://bizweb.dktcdn.net/thumb/large/100/438/408/products/tsm6095-dn1-13.jpg?v=1684830777000',
+    },
 
   ];
 }

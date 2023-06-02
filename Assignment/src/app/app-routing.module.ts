@@ -14,6 +14,8 @@ import { ProductMaleComponent } from './pages/user/product-male/product-male.com
 import { ProductFemaleComponent } from './pages/user/product-female/product-female.component';
 import { ProductChildrenComponent } from './pages/user/product-children/product-children.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { ProductAddComponent } from './pages/admin/product-add/product-add.component';
+import { ProductUpdateComponent } from './pages/admin/product-update/product-update.component';
 
 const routes: Routes = [
   {
@@ -36,6 +38,8 @@ const routes: Routes = [
       {path: "", component: LoginAdminComponent},
       {path: "home", component: DashboardComponent},
       {path: "product_male", component: ProductsAdminComponent},
+      {path: "product_add", component: ProductAddComponent},
+      {path: "product_update/:id", component: ProductUpdateComponent},
     ]
   },
   {
