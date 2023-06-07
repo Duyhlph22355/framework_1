@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Product } from 'src/app/common/product';
+import { IProduct } from 'src/app/interface/IProduct';
 
 @Component({
   selector: 'app-home',
@@ -7,45 +7,5 @@ import { Product } from 'src/app/common/product';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
-  show = {}
-  show_product (product: Product) {
-    this.show = product
-  }
-  products: Product[] = [
-    {
-      id: '1',
-      name: 'Quần Jean',
-      price: 100,
-      description: 'lorem ipsum dolor sit amet, consectetur adip',
-      imgUrl:
-        'https://laforce.vn/wp-content/uploads/2022/07/phoi-do-voi-quan-jean-ong-suong-mua-dong.jpg',
-    },
-    {
-      id: '2',
-      name: 'Áo Phông',
-      price: 200,
-      description: 'lorem ipsum',
-      imgUrl:
-        'https://mayvinhthanh.vn/wp-content/uploads/2021/03/pasted-image-0.png',
-    },
-    // {
-    //   id: '3',
-    //   name: 'Quần Bò',
-    //   price: 300,
-    //   description:
-    //     'Product 1 description Product 1 descriptionProduct 1 descriptionProduct 1 description',
-    //   imgUrl:
-    //     'https://file.hstatic.net/200000053174/file/cac-loai-ao-vest-nam_07a5c0b0bfee420b8edc3225a9529187.jpg',
-    // },
-    // {
-    //   id: '4',
-    //   name: 'Giày',
-    //   price: 350,
-    //   description:
-    //     'Product 1 description Product 1 descriptionProduct 1 descriptionProduct 1 description',
-    //   imgUrl:
-    //     'https://file.hstatic.net/200000053174/file/cac-loai-ao-vest-nam_07a5c0b0bfee420b8edc3225a9529187.jpg',
-    // },
 
-  ];
 }
