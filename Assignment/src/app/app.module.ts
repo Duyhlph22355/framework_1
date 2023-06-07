@@ -33,6 +33,14 @@ import { RatingModule } from 'primeng/rating';
 import { TagModule } from 'primeng/tag';
 import { ButtonModule } from 'primeng/button';
 import { TableModule } from 'primeng/table';
+import { ProductAddComponent } from './pages/admin/product-add/product-add.component';
+import { ProductUpdateComponent } from './pages/admin/product-update/product-update.component';
+import { CategoryAddComponent } from './pages/admin/category-add/category-add.component';
+import { CategoryUpdateComponent } from './pages/admin/category-update/category-update.component';
+import { TreeSelectModule } from 'primeng/treeselect';
+import { AdminProductMaleComponent } from './pages/admin/admin-product-male/admin-product-male.component';
+import { AdminProductFemaleComponent } from './pages/admin/admin-product-female/admin-product-female.component';
+import { AdminProductChildrenComponent } from './pages/admin/admin-product-children/admin-product-children.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +63,14 @@ import { TableModule } from 'primeng/table';
     CartComponent,
     ProductMaleComponent,
     ProductFemaleComponent,
-    ProductChildrenComponent
+    ProductChildrenComponent,
+    ProductAddComponent,
+    ProductUpdateComponent,
+    CategoryAddComponent,
+    CategoryUpdateComponent,
+    AdminProductMaleComponent,
+    AdminProductFemaleComponent,
+    AdminProductChildrenComponent
   ],
   imports: [
     ButtonModule,
@@ -69,7 +84,8 @@ import { TableModule } from 'primeng/table';
     ChartModule,
     DataViewModule,
     HttpClientModule,
-    TableModule
+    TableModule,
+    TreeSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

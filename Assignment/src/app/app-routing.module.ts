@@ -7,13 +7,17 @@ import { ProductDetailComponent } from './pages/user/product-detail/product-deta
 import { LayoutComponent } from './pages/user/layout/layout.component';
 import { LayoutAdminComponent } from './pages/admin/layout-admin/layout-admin.component';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
-import { ProductsAdminComponent } from './pages/admin/products-admin/products-admin.component';
 import { LoginAdminComponent } from './pages/admin/login-admin/login-admin.component';
 import { CartComponent } from './pages/user/cart/cart.component';
 import { ProductMaleComponent } from './pages/user/product-male/product-male.component';
 import { ProductFemaleComponent } from './pages/user/product-female/product-female.component';
 import { ProductChildrenComponent } from './pages/user/product-children/product-children.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { ProductAddComponent } from './pages/admin/product-add/product-add.component';
+import { ProductUpdateComponent } from './pages/admin/product-update/product-update.component';
+import { AdminProductMaleComponent } from './pages/admin/admin-product-male/admin-product-male.component';
+import { AdminProductFemaleComponent } from './pages/admin/admin-product-female/admin-product-female.component';
+import { AdminProductChildrenComponent } from './pages/admin/admin-product-children/admin-product-children.component';
 
 const routes: Routes = [
   {
@@ -35,7 +39,11 @@ const routes: Routes = [
     children: [
       {path: "", component: LoginAdminComponent},
       {path: "home", component: DashboardComponent},
-      {path: "product_male", component: ProductsAdminComponent},
+      {path: "product_male", component: AdminProductMaleComponent},
+      {path: "product_female", component: AdminProductFemaleComponent},
+      {path: "product_children", component: AdminProductChildrenComponent},
+      {path: "product_add", component: ProductAddComponent},
+      {path: "product_update/:id", component: ProductUpdateComponent},
     ]
   },
   {

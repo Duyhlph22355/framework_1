@@ -1,0 +1,267 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Áo thun nam Cotton Compact Premium trẻ trung năng động thấm hút mồ hôi co giãn 4 chiều MRM Manlywear",
+      "price": 149000,
+      "imgUrl": "https://laforce.vn/wp-content/uploads/2022/07/phoi-do-voi-quan-jean-ong-suong-mua-dong.jpg",
+      "size": "L",
+      "color": "Đen",
+      "category": 1
+    },
+    {
+      "id": 2,
+      "name": "Áo Phông Thể Thao Nam Tanktop",
+      "price": 200000,
+      "imgUrl": "https://mayvinhthanh.vn/wp-content/uploads/2021/03/pasted-image-0.png",
+      "size": "XL",
+      "color": "Trắng",
+      "category": 1
+    },
+    {
+      "id": 3,
+      "name": "Áo Sơ Mi Nam Cộc Tay Kẻ Bambo",
+      "price": 300000,
+      "imgUrl": "https://bizweb.dktcdn.net/thumb/large/100/438/408/products/scm5049-kde-10.jpg?v=1677142082000",
+      "size": "XL",
+      "color": "Trắng đen",
+      "category": 1
+    },
+    {
+      "id": 4,
+      "name": "Áo Polo Nam Pique Sồi",
+      "price": 350000,
+      "imgUrl": "https://bizweb.dktcdn.net/thumb/large/100/438/408/products/apm5393-xhd-3.jpg?v=1662358179000",
+      "size": "XL",
+      "color": "Xanh",
+      "category": 1
+    },
+    {
+      "id": 5,
+      "name": "Áo Vest Nam Nano Công Sở Trẻ Trung",
+      "price": 1150000,
+      "imgUrl": "https://bizweb.dktcdn.net/thumb/large/100/438/408/products/vem4007-xnh-2.jpg?v=1666153948000",
+      "size": "XXL",
+      "color": "Xanh",
+      "category": 1
+    },
+    {
+      "id": 6,
+      "name": "Áo T-Shirt Nam Cotton USA Phiên Bản Premium",
+      "price": 160000,
+      "imgUrl": "https://bizweb.dktcdn.net/thumb/large/100/438/408/products/tsm5231-vag-3.jpg?v=1652520442000",
+      "size": "L",
+      "color": "Vàng",
+      "category": 1
+    },
+    {
+      "id": 7,
+      "name": "Áo Thun Nam Dập Chữ Nổi Cotton Usa",
+      "price": 235000,
+      "imgUrl": "https://bizweb.dktcdn.net/thumb/large/100/438/408/products/tsm6095-dn1-13.jpg?v=1684830777000",
+      "size": "L",
+      "color": "Đen",
+      "category": 1
+    },
+    {
+      "id": 8,
+      "name": "àdadsf",
+      "price": 1231231,
+      "imgUrl": "ádfasd",
+      "size": "sfdfsbsdfb",
+      "color": "sdfbsdfbs",
+      "category": 1
+    },
+    {
+      "id": 9,
+      "name": "",
+      "price": 0,
+      "imgUrl": "",
+      "size": "",
+      "color": "",
+      "category": 1
+    },
+    {
+      "id": 10,
+      "name": "sdgdf",
+      "price": 34255,
+      "imgUrl": "ưerwgerwer",
+      "size": "gưerger",
+      "color": "ưergwer",
+      "category": 1
+    },
+    {
+      "id": 11,
+      "name": "sdgdf",
+      "price": 34255,
+      "imgUrl": "ưerwgerwer",
+      "size": "gưerger",
+      "color": "ưergwer",
+      "category": 1
+    },
+    {
+      "id": 12,
+      "name": "sdgdf",
+      "price": 34255,
+      "imgUrl": "ưerwgerwer",
+      "size": "gưerger",
+      "color": "ưergwer",
+      "category": 1
+    },
+    {
+      "id": 13,
+      "name": "sdgdf",
+      "price": 34255,
+      "imgUrl": "ưerwgerwer",
+      "size": "gưerger",
+      "color": "ưergwer",
+      "category": 1
+    },
+    {
+      "id": 14,
+      "name": "ẻwweg",
+      "price": 12312,
+      "imgUrl": "mkvvnvjh",
+      "size": "jvgnb",
+      "color": "j,vh",
+      "category": 1
+    },
+    {
+      "id": 15,
+      "name": "èdfed",
+      "price": 213123,
+      "imgUrl": "fgnb",
+      "size": "ỵchj",
+      "color": "otugkhvm",
+      "category": 1
+    },
+    {
+      "id": 16,
+      "name": "dgfsdfg",
+      "price": 23423,
+      "imgUrl": "sdfgsdf",
+      "size": "sdfg",
+      "color": "ưerg",
+      "category": 1
+    },
+    {
+      "id": 17,
+      "name": "dtdft",
+      "price": 4646,
+      "imgUrl": "tdftdt",
+      "size": "6545",
+      "color": "fzdf",
+      "category": 1
+    },
+    {
+      "id": 18,
+      "name": "dffsf",
+      "price": 4545,
+      "imgUrl": "dfsdfs",
+      "size": "4545",
+      "color": "sfdsdfs",
+      "category": 1
+    },
+    {
+      "id": 19,
+      "name": "đâsd",
+      "price": 343434,
+      "imgUrl": "34334",
+      "size": "4343434",
+      "color": "343434",
+      "category": 1
+    },
+    {
+      "id": 20,
+      "name": "45454",
+      "price": 454545,
+      "imgUrl": "535454",
+      "size": "454545",
+      "color": "545454",
+      "category": 0
+    },
+    {
+      "id": 21,
+      "name": "sdf",
+      "price": 5656,
+      "imgUrl": "dfdfdg",
+      "size": "fdgfgdfg",
+      "color": "gdfgdfg",
+      "category": 0
+    },
+    {
+      "id": 22,
+      "name": "dfdfsd",
+      "price": 343434,
+      "imgUrl": "sdfsfs",
+      "size": "fd3343",
+      "color": "34343",
+      "category": 0
+    },
+    {
+      "id": 23,
+      "name": "fsrers",
+      "price": 454545,
+      "imgUrl": "sdfsd",
+      "size": "545454",
+      "color": "454545",
+      "category": 0
+    },
+    {
+      "id": 24,
+      "name": "dsfdf",
+      "price": 34334,
+      "imgUrl": "fdsfsdf",
+      "size": "dfsdf",
+      "color": "sdfsdf",
+      "category": 0
+    },
+    {
+      "id": 25,
+      "name": "đsfsdfsd",
+      "price": 43434,
+      "imgUrl": "dsfdfs",
+      "size": "34343",
+      "color": "434343",
+      "category": 0
+    },
+    {
+      "id": 26,
+      "name": "dfsdfsd",
+      "price": 454545,
+      "imgUrl": "fsdfsdfs",
+      "size": "dfsfsdf",
+      "color": "fsdfsdf",
+      "category": 0
+    },
+    {
+      "id": 27,
+      "name": "fsdfdsfs",
+      "price": 454545,
+      "imgUrl": "sdfsdf",
+      "size": "4554",
+      "color": "45454",
+      "category": 0
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Thời Trang Nam"
+    },
+    {
+      "id": 2,
+      "name": "Thời Trang Nữ"
+    },
+    {
+      "id": 3,
+      "name": "Thời Trang Trẻ Em"
+    }
+  ],
+  "user": {
+    "name": "Hoàng Long Duy",
+    "email": "longduy@gmail.com",
+    "phone_number": "0987654321",
+    "role": "admin"
+  }
+}

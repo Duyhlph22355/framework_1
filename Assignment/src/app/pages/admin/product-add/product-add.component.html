@@ -1,0 +1,75 @@
+<section class="bg-white">
+  <div class="flex items-center justify-center">
+    <form [formGroup]="productForm" (ngSubmit)="onHandleSubmit()" class="mt-8 grid grid-cols-6 gap-6">
+      <div class="col-span-6">
+        <label for="Email" class="block text-sm font-medium text-gray-700">
+          Tên sản phẩm
+        </label>
+
+        <input type="text" formControlName="name"
+          class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm h-[35px]" />
+      </div>
+      <div class="col-span-6">
+        <label for="Email" class="block text-sm font-medium text-gray-700">
+          Ảnh sản phẩm
+        </label>
+
+        <input type="text" formControlName="imgUrl"
+          class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm h-[35px]" />
+      </div>
+      <div class="col-span-6 sm:col-span-3">
+        <label for="FirstName" class="block text-sm font-medium text-gray-700">
+          Kích Thước
+        </label>
+
+        <input type="text" formControlName="size"
+          class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm h-[35px] w-[400px]" />
+      </div>
+
+      <div class="col-span-6 sm:col-span-3">
+        <label for="LastName" class="block text-sm font-medium text-gray-700">
+          Màu
+        </label>
+
+        <input type="text" formControlName="color"
+          class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm h-[35px]" />
+      </div>
+
+
+
+      <div class="col-span-6 sm:col-span-3">
+        <label for="Password" class="block text-sm font-medium text-gray-700">
+          Giá
+        </label>
+
+        <input type="number" formControlName="price"
+          class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm h-[35px]" />
+      </div>
+
+      <div class="col-span-6 sm:col-span-3">
+        <label for="PasswordConfirmation" class="block text-sm font-medium text-gray-700">
+          Danh mục sản phẩm
+        </label>
+
+
+        <div class="card flex justify-content-center">
+          <Select formControlName="category" class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm h-[35px]" containerStyleClass="w-full" placeholder="Select Item">
+            <option *ngFor="let cate of CategoryList" >{{cate.name}}</option>
+          </Select>
+        </div>
+      </div>
+
+
+
+
+      <div class="col-span-6 sm:flex sm:items-center sm:gap-4 ml-[305px]">
+        <button
+          type="submit"
+          class="inline-block shrink-0 rounded-md border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500">
+          Thêm Mới
+        </button>
+
+      </div>
+    </form>
+  </div>
+</section>

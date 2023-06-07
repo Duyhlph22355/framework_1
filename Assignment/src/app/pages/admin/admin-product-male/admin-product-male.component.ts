@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ICategories } from 'src/app/interface/ICategories';
 import { IProduct } from 'src/app/interface/IProduct';
 import { CategoriesService } from 'src/app/services/categories.service';
 import { ProductsService } from 'src/app/services/products.service';
 
 @Component({
-  selector: 'app-products-admin',
-  templateUrl: './products-admin.component.html',
-  styleUrls: ['./products-admin.component.scss']
+  selector: 'app-admin-product-male',
+  templateUrl: './admin-product-male.component.html',
+  styleUrls: ['./admin-product-male.component.scss']
 })
-export class ProductsAdminComponent {
+export class AdminProductMaleComponent {
   products: IProduct[] = [];
   CategoryList: ICategories[] = [];
   constructor(
