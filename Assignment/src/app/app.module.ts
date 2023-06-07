@@ -38,6 +38,9 @@ import { ProductUpdateComponent } from './pages/admin/product-update/product-upd
 import { CategoryAddComponent } from './pages/admin/category-add/category-add.component';
 import { CategoryUpdateComponent } from './pages/admin/category-update/category-update.component';
 import { TreeSelectModule } from 'primeng/treeselect';
+import { AdminProductMaleComponent } from './pages/admin/admin-product-male/admin-product-male.component';
+import { AdminProductFemaleComponent } from './pages/admin/admin-product-female/admin-product-female.component';
+import { AdminProductChildrenComponent } from './pages/admin/admin-product-children/admin-product-children.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +67,10 @@ import { TreeSelectModule } from 'primeng/treeselect';
     ProductAddComponent,
     ProductUpdateComponent,
     CategoryAddComponent,
-    CategoryUpdateComponent
+    CategoryUpdateComponent,
+    AdminProductMaleComponent,
+    AdminProductFemaleComponent,
+    AdminProductChildrenComponent
   ],
   imports: [
     ButtonModule,
