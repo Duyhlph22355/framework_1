@@ -18,7 +18,7 @@ export class ProductUpdateComponent {
     imgUrl: [''],
     size: [''],
     color: [''],
-    category: [0]
+    category: [1]
   });
   CategoryList: ICategories[] = [];
   constructor(
@@ -53,15 +53,16 @@ export class ProductUpdateComponent {
   }
   onHandleSubmit() {
     if (this.productForm.valid) {
+      const id = this.router.snapshot.paramMap.get('id');
+    if (id) {
       const product: IProduct = {
-        id: '',
+        id: id,
         name: this.productForm.value.name || '',
         price: this.productForm.value.price || 0,
         imgUrl: this.productForm.value.imgUrl || '',
         size: this.productForm.value.size || '',
         color: this.productForm.value.color || '',
-        category: this.productForm.value.category || 0,
-
+        category: this.productForm.value.category || 1,
       };
 
       this.productService.updateProduct(product).subscribe((product) => {
@@ -69,6 +70,6 @@ export class ProductUpdateComponent {
         console.log(product);
       });
     }
-
+  }
   }
 }

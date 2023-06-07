@@ -25,11 +25,17 @@ export class ProductAddComponent {
     private productService: ProductsService,
     private categoriesService: CategoriesService
   ) {
+
+  }
+  ngOnInit(){
     this.categoriesService.getCategories().subscribe((data:any) => {
       this.CategoryList = data
     })
   }
   onHandleSubmit() {
+    console.log(this.productForm);
+console.log(this.CategoryList);
+
     const product: IProduct = {
       id: '',
       name: this.productForm.value.name || '',
