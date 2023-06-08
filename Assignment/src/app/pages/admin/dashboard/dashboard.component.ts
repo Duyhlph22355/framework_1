@@ -30,7 +30,13 @@ export class DashboardComponent implements OnInit {
                   backgroundColor: documentStyle.getPropertyValue('--pink-500'),
                   borderColor: documentStyle.getPropertyValue('--pink-500'),
                   data: [28, 48, 40, 19, 86, 27, 90]
-              }
+              },
+              {
+                label: 'Thời Trang Trẻ Em',
+                backgroundColor: documentStyle.getPropertyValue('--green-500'),
+                borderColor: documentStyle.getPropertyValue('--green-500'),
+                data: [53, 32, 17, 78, 56, 65, 69]
+            }
           ]
       };
 

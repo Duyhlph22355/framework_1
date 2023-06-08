@@ -13,12 +13,12 @@ import { CategoriesService } from 'src/app/services/categories.service';
 export class ProductUpdateComponent {
   product!: IProduct;
   productForm = this.formBuilder.group({
-    name: ['', [Validators.required, Validators.minLength(4)]],
-    price: [0],
-    imgUrl: [''],
-    size: [''],
-    color: [''],
-    category: [1]
+    name: ['', [Validators.required]],
+    price: [0, [Validators.required, Validators.min(0.01)]],
+    imgUrl: ['', [Validators.required]],
+    size: ['', [Validators.required]],
+    color: ['', [Validators.required]],
+    category: [1, [Validators.required]]
   });
   CategoryList: ICategories[] = [];
   constructor(
@@ -50,6 +50,9 @@ export class ProductUpdateComponent {
     this.categoriesService.getCategories().subscribe((data:any) => {
       this.CategoryList = data
     })
+  }
+  get validate(){
+    return this.productForm.controls
   }
   onHandleSubmit() {
     if (this.productForm.valid) {

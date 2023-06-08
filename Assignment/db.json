@@ -52,7 +52,7 @@
       "imgUrl": "https://bizweb.dktcdn.net/thumb/large/100/438/408/products/tsm5231-vag-3.jpg?v=1652520442000",
       "size": "L",
       "color": "Vàng",
-      "category": 1
+      "category": 3
     },
     {
       "id": 7,
@@ -61,7 +61,7 @@
       "imgUrl": "https://bizweb.dktcdn.net/thumb/large/100/438/408/products/tsm6095-dn1-13.jpg?v=1684830777000",
       "size": "L",
       "color": "Đen",
-      "category": 1
+      "category": 2
     }
   ],
   "categories": [
@@ -78,10 +78,31 @@
       "name": "Thời Trang Trẻ Em"
     }
   ],
-  "user": {
-    "name": "Hoàng Long Duy",
-    "email": "longduy@gmail.com",
-    "phone_number": "0987654321",
-    "role": "admin"
-  }
+  "users": [
+    {
+      "id": 1,
+      "name": "Hoàng Long Duy",
+      "email": "longduy@gmail.com",
+      "password": "123123",
+      "role": "member"
+    },
+    {
+      "id": "2",
+      "name": "Hoàng Long Duy",
+      "email": "ld@gmail.com",
+      "password": "123456",
+      "role": "member"
+    }
+  ],
+  "cart":[
+    {
+      "id": 1,
+      "name_product":"áo trắng",
+      "size_product":"XL",
+      "color_product":"trắng",
+      "price_product": 123,
+      "total_money":124124,
+      "id_user":1
+    }
+  ]
 }

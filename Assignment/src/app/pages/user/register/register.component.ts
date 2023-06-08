@@ -1,23 +1,47 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
-
+import { Router } from '@angular/router';
+import { AuthService } from 'src/app/services/auth.service';
+import {  AbstractControl, FormBuilder , FormGroup, Validators } from '@angular/forms';
+import { IUsers } from 'src/app/interface/IUser';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent {
-  user = {
-    first_name: '',
-    last_name: '',
-    email: '',
-    password: '',
-    confirm_password: ''
-  };
 
+  constructor(
+    private router: Router,
+    private authService: AuthService,
+    private formBuilder: FormBuilder,
+    ){
+
+  }
+  registerForm = this.formBuilder.group({
+    "name": ['', [Validators.required]],
+    "email": ['', [Validators.required, Validators.email]],
+    "password": ['', [Validators.required, Validators.minLength(6)]],
+    "confirm_password": ['',[Validators.required]]
+  })
+  get validate(){
+    return this.registerForm.controls
+  }
   onSubmit() {
-    console.log('Registration submitted:', this.user);
-    // Goi API
+    if(this.registerForm.valid){
+      const user: IUsers = {
+        id: '',
+        name: this.registerForm.value.name || '',
+        email: this.registerForm.value.email || '',
+        password: this.registerForm.value.password || '',
+        role: "member"
+      };
+      this.authService.addUser(user).subscribe((user) => {
+        alert(`Đăng ký tài khoản thành công!!!`);
+        this.router.navigate(['/login']);
+      });
+    }
+  console.log(this.registerForm.value);
+
   }
 }
 

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { UntypedFormBuilder, Validators } from '@angular/forms';
+import { FormBuilder, UntypedFormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { ICategories } from 'src/app/interface/ICategories';
 import { IProduct } from 'src/app/interface/IProduct';
 import { CategoriesService } from 'src/app/services/categories.service';
@@ -12,20 +13,25 @@ import { ProductsService } from 'src/app/services/products.service';
 })
 export class ProductAddComponent {
   productForm = this.formBuilder.group({
-    name: ['', [Validators.required, Validators.minLength(4)]],
-    price: [0],
-    imgUrl: [''],
-    size: [''],
-    color: [''],
-    category: [0]
+    name: ['', [Validators.required]],
+    price: [0, [Validators.required, Validators.min(0.01)]],
+    imgUrl: ['', [Validators.required]],
+    size: ['', [Validators.required]],
+    color: ['', [Validators.required]],
+    category: [1, [Validators.required]]
   });
   CategoryList: ICategories[] = [];
   constructor(
-    private formBuilder: UntypedFormBuilder,
+    private formBuilder: FormBuilder,
     private productService: ProductsService,
-    private categoriesService: CategoriesService
+    private categoriesService: CategoriesService,
+    private router: Router,
+
   ) {
 
+  }
+  get validate(){
+    return this.productForm.controls
   }
   ngOnInit(){
     this.categoriesService.getCategories().subscribe((data:any) => {
@@ -33,8 +39,7 @@ export class ProductAddComponent {
     })
   }
   onHandleSubmit() {
-    console.log(this.productForm);
-console.log(this.CategoryList);
+    if (this.productForm.valid) {
 
     const product: IProduct = {
       id: '',
@@ -46,9 +51,12 @@ console.log(this.CategoryList);
       category: this.productForm.value.category || 0,
 
     };
+    console.log(this.productForm.value.category);
 
     this.productService.addProduct(product).subscribe((product) => {
       alert(`Thêm sản phẩm thành công: ${product.name}`);
+      this.router.navigate(['/admin/home'])
     });
   }
+}
 }

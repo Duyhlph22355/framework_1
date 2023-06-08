@@ -41,29 +41,33 @@
       </tr>
     </thead>
 
-    <tbody class="divide-y divide-gray-200" >
-        <tr class="text-center" *ngFor="let product of products; index as i">
-          <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-            {{ i + 1 }}
-          </td>
-          <td class="">{{ product.name }}</td>
-          <td class="category-column" *ngFor="let cate of CategoryList" >
-            {{ cate.id === product.category ? cate.name : '' }}
-          </td>
-          <td class="" >
-            <img width="150px" src="{{product.imgUrl}}" alt="">
-          </td>
-          <td class="">{{ product.price }}</td>
-          <td class="">{{ product.size }}</td>
-          <td class="">{{ product.color }}</td>
-          <td class="whitespace-nowrap px-4 py-2 text-gray-700">
-            <button class="mr-[12px] inline-block rounded bg-indigo-600 px-8 py-3 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-500" (click)="delete(product.id!)">
-              Xóa
-            </button>
-            <a class="inline-block rounded border border-current px-8 py-3 text-sm font-medium text-indigo-600 transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:text-indigo-500" [routerLink]="'/admin/product_update/' + product.id">
-              Sửa
-            </a>
-          </td>
+    <tbody class="divide-y divide-gray-200" *ngFor="let product of products; index as i" >
+        <tr class="text-center"*ngIf="+product.category == 1">
+            <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+              {{ i + 1 }}
+            </td>
+            <td class="">{{ product.name }}</td>
+            <td class="category-column">
+              <div *ngFor="let cate of CategoryList">
+                <div *ngIf="cate.id?.toString() === product.category?.toString()">
+                  {{ cate.name }}
+                </div>
+              </div>
+            </td>
+            <td class="" >
+              <img width="150px" src="{{product.imgUrl}}" alt="">
+            </td>
+            <td class="">{{ product.price }}</td>
+            <td class="">{{ product.size }}</td>
+            <td class="">{{ product.color }}</td>
+            <td class="whitespace-nowrap px-4 py-2 text-gray-700">
+              <button class="mr-[12px] inline-block rounded bg-indigo-600 px-8 py-3 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-500" (click)="delete(product.id!)">
+                Xóa
+              </button>
+              <a class="inline-block rounded border border-current px-8 py-3 text-sm font-medium text-indigo-600 transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:text-indigo-500" [routerLink]="'/admin/product_update/' + product.id">
+                Sửa
+              </a>
+            </td>
         </tr>
     </tbody>
   </table>
