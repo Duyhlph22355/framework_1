@@ -18,6 +18,9 @@ import { ProductUpdateComponent } from './pages/admin/product-update/product-upd
 import { AdminProductMaleComponent } from './pages/admin/admin-product-male/admin-product-male.component';
 import { AdminProductFemaleComponent } from './pages/admin/admin-product-female/admin-product-female.component';
 import { AdminProductChildrenComponent } from './pages/admin/admin-product-children/admin-product-children.component';
+import { AdminCategoryComponent } from './pages/admin/admin-category/admin-category.component';
+import { CategoryAddComponent } from './pages/admin/category-add/category-add.component';
+import { CategoryUpdateComponent } from './pages/admin/category-update/category-update.component';
 
 const routes: Routes = [
   {
@@ -44,6 +47,10 @@ const routes: Routes = [
       {path: "product_children", component: AdminProductChildrenComponent},
       {path: "product_add", component: ProductAddComponent},
       {path: "product_update/:id", component: ProductUpdateComponent},
+      {path: "category", component: AdminCategoryComponent},
+      {path: "category_add", component: CategoryAddComponent},
+      {path: "category_update/:id", component: CategoryUpdateComponent},
+
     ]
   },
   {

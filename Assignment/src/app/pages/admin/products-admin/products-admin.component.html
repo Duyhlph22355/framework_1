@@ -1,55 +1,60 @@
-<!--
-  Heads up! 👋
-
-  This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
--->
 
 <div class="overflow-x-auto rounded-lg border border-gray-200">
-  <table class="min-w-full divide-y-2 divide-gray-200 bg-white text-sm">
-    <thead class="ltr:text-left rtl:text-right">
-      <tr>
-        <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-          Name
-        </th>
-        <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-          Date of Birth
-        </th>
-        <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-          Role
-        </th>
-        <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-          Salary
-        </th>
-      </tr>
-    </thead>
+<table class="min-w-full divide-y-2 divide-gray-200 bg-white text-sm">
+  <thead class="ltr:text-left rtl:text-right">
+    <tr>
+      <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+        ID
+      </th>
+      <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+        Tên sản phẩm
+      </th>
+      <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+        Danh mục sản phẩm
+      </th>
+      <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+        Ảnh
+      </th>
+      <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+        Giá tiền
+      </th>
+      <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+        Kích thước
+      </th>
+      <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+        Màu
+      </th>
+    </tr>
+  </thead>
 
-    <tbody class="divide-y divide-gray-200">
-      <tr>
+  <tbody class="divide-y divide-gray-200" >
+      <tr class="text-center" *ngFor="let product of products; index as i">
         <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-          John Doe
+          {{ i + 1 }}
         </td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">24/05/1995</td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">Web Developer</td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">$120,000</td>
-      </tr>
-
-      <tr>
-        <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-          Jane Doe
+        <td class="">{{ product.name }}</td>
+        <td class="category-column">
+          <div *ngFor="let cate of CategoryList">
+            <div *ngIf="cate.id?.toString() === product.category?.toString()">
+              {{ cate.name }}
+            </div>
+          </div>
         </td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">04/11/1980</td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">Web Designer</td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">$100,000</td>
-      </tr>
-
-      <tr>
-        <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-          Gary Barlow
+        <td class="" >
+          <img width="150px" src="{{product.imgUrl}}" alt="">
         </td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">24/05/1995</td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">Singer</td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">$20,000</td>
+        <td class="">{{ product.price }}</td>
+        <td class="">{{ product.size }}</td>
+        <td class="">{{ product.color }}</td>
+        <td class="whitespace-nowrap px-4 py-2 text-gray-700">
+          <button class="mr-[12px] inline-block rounded bg-indigo-600 px-8 py-3 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-500" (click)="delete(product.id!)">
+            Xóa
+          </button>
+          <a class="inline-block rounded border border-current px-8 py-3 text-sm font-medium text-indigo-600 transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:text-indigo-500" [routerLink]="'/admin/product_update/' + product.id">
+            Sửa
+          </a>
+        </td>
       </tr>
-    </tbody>
-  </table>
+  </tbody>
+</table>
 </div>

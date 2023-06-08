@@ -8,6 +8,11 @@
 
         <input type="text" formControlName="name"
           class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm h-[35px]" />
+          <div *ngIf="validate.name.errors" [hidden]="!validate.name.touched">
+            <div>
+              <p class="text-red-500">Không được để trống</p>
+            </div>
+          </div>
       </div>
       <div class="col-span-6">
         <label for="Email" class="block text-sm font-medium text-gray-700">
@@ -16,6 +21,11 @@
 
         <input type="text" formControlName="imgUrl"
           class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm h-[35px]" />
+          <div *ngIf="validate.imgUrl.errors" [hidden]="!validate.imgUrl.touched">
+            <div>
+              <p class="text-red-500">Không được để trống</p>
+            </div>
+          </div>
       </div>
       <div class="col-span-6 sm:col-span-3">
         <label for="FirstName" class="block text-sm font-medium text-gray-700">
@@ -24,6 +34,11 @@
 
         <input type="text" formControlName="size"
           class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm h-[35px] w-[400px]" />
+          <div *ngIf="validate.size.errors" [hidden]="!validate.size.touched">
+                <div>
+                  <p class="text-red-500">Không được để trống</p>
+                </div>
+              </div>
       </div>
 
       <div class="col-span-6 sm:col-span-3">
@@ -33,6 +48,11 @@
 
         <input type="text" formControlName="color"
           class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm h-[35px]" />
+          <div *ngIf="validate.color.errors" [hidden]="!validate.color.touched">
+                <div>
+                  <p class="text-red-500">Không được để trống</p>
+                </div>
+              </div>
       </div>
 
 
@@ -44,6 +64,12 @@
 
         <input type="number" formControlName="price"
           class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm h-[35px]" />
+          <div *ngIf="validate.price.hasError('required')">
+            <p class="text-red-500">Không được để trống</p>
+          </div>
+          <div *ngIf="validate.price.hasError('min')">
+            <p class="text-red-500">Phải là số dương</p>
+          </div>
       </div>
 
       <div class="col-span-6 sm:col-span-3">
@@ -56,6 +82,11 @@
           <Select formControlName="category" class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm h-[35px]" containerStyleClass="w-full" placeholder="Select Item">
             <option [value]="cate.id" *ngFor="let cate of CategoryList">{{cate.name}}</option>
           </Select>
+          <!-- <div *ngIf="validate.name.errors" [hidden]="!validate.name.touched">
+                <div>
+                  <p class="text-red-500">Không được để trống</p>
+                </div>
+              </div> -->
         </div>
       </div>
 

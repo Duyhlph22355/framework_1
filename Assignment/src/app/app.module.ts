@@ -41,6 +41,7 @@ import { TreeSelectModule } from 'primeng/treeselect';
 import { AdminProductMaleComponent } from './pages/admin/admin-product-male/admin-product-male.component';
 import { AdminProductFemaleComponent } from './pages/admin/admin-product-female/admin-product-female.component';
 import { AdminProductChildrenComponent } from './pages/admin/admin-product-children/admin-product-children.component';
+import { AdminCategoryComponent } from './pages/admin/admin-category/admin-category.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +71,8 @@ import { AdminProductChildrenComponent } from './pages/admin/admin-product-child
     CategoryUpdateComponent,
     AdminProductMaleComponent,
     AdminProductFemaleComponent,
-    AdminProductChildrenComponent
+    AdminProductChildrenComponent,
+    AdminCategoryComponent
   ],
   imports: [
     ButtonModule,

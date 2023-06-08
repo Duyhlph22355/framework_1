@@ -17,20 +17,26 @@ export class DashboardComponent implements OnInit {
       const surfaceBorder = documentStyle.getPropertyValue('--surface-border');
 
       this.data = {
-          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+          labels: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7'],
           datasets: [
               {
-                  label: 'My First dataset',
+                  label: 'Thời Trang Nam',
                   backgroundColor: documentStyle.getPropertyValue('--blue-500'),
                   borderColor: documentStyle.getPropertyValue('--blue-500'),
                   data: [65, 59, 80, 81, 56, 55, 40]
               },
               {
-                  label: 'My Second dataset',
+                  label: 'Thời Trang Nữ',
                   backgroundColor: documentStyle.getPropertyValue('--pink-500'),
                   borderColor: documentStyle.getPropertyValue('--pink-500'),
                   data: [28, 48, 40, 19, 86, 27, 90]
-              }
+              },
+              {
+                label: 'Thời Trang Trẻ Em',
+                backgroundColor: documentStyle.getPropertyValue('--green-500'),
+                borderColor: documentStyle.getPropertyValue('--green-500'),
+                data: [53, 32, 17, 78, 56, 65, 69]
+            }
           ]
       };
 

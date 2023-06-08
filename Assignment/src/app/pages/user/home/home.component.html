@@ -16,7 +16,7 @@
   <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8">
     <ul class="grid grid-cols-1 gap-4 mt-8 lg:grid-cols-3">
       <li>
-        <a href="#" class="relative block group">
+        <a [routerLink]="['/product_male']" class="relative block group">
           <img
             src="https://thanhphoquangngai.com/wp-content/uploads/2019/11/ben-amp-tod-321587.jpg"
             alt=""
@@ -38,7 +38,7 @@
       </li>
 
       <li>
-        <a href="#" class="relative block group">
+        <a [routerLink]="['/product_female']" class="relative block group">
           <img
             src="https://inhat.vn/wp-content/uploads/2021/03/Shop-quan-ao-nu-sexy-ngau-5.png"
             alt=""
@@ -60,7 +60,7 @@
       </li>
 
       <li class="lg:col-span-2 lg:col-start-2 lg:row-span-2 lg:row-start-1">
-        <a href="#" class="relative block group">
+        <a [routerLink]="['/product_children']" class="relative block group">
           <img
             src="https://alltop.vn/backend/media/images/posts/94/NEY_Kids_Shop-9462.jpg"
             alt=""
@@ -157,9 +157,9 @@
 
       <div class="lg:col-span-2 lg:py-8">
         <ul class="grid grid-cols-2 gap-4">
-          <!-- <div  *ngFor="let product of products">
+          <div  *ngFor="let product of randomProducts">
             <li>
-              <a [routerLink]="['/product/{{product.id}}']" class="block group">
+              <a [routerLink]="'/product/'+ product.id" class="block group">
                 <img
                   src="{{ product.imgUrl }}" alt="{{ product.name }}"
                   alt=""
@@ -177,7 +177,7 @@
                 </div>
               </a>
             </li>
-          </div> -->
+          </div>
         </ul>
       </div>
     </div>
