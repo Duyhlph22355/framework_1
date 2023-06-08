@@ -70,179 +70,53 @@
       "imgUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/e9/d0/8b/113cc2f2a44974ddf1036b5a8293b492.jpg",
       "size": "L",
       "color": "Cam",
-      "category": 1
+      "category": 2
     },
     {
       "id": 9,
       "name": "Váy nữ oni bayby",
       "price": 200000,
       "imgUrl": "https://file.hstatic.net/1000197303/file/chan-vay-chu-a-dai-ket-hop-voi-ao-blouse_20bb49581f804bd58668ffdd42b45f80.jpg",
-      "size": "",
-      "color": "",
-      "category": 1
+      "size": "M",
+      "color": "Trắng",
+      "category": 2
     },
     {
       "id": 10,
       "name": "Váy hiện đại",
       "price": 34255,
       "imgUrl": "https://file.hstatic.net/1000197303/file/oi-ao-croptop-la-cach-phoi-do-cho-nguoi-lun-bap-chan-to-hieu-qua-nhat-_d4916fb4e28f4e59bc2296c1ff71ee00.jpg",
-      "size": "gưerger",
-      "color": "ưergwer",
-      "category": 1
+      "size": "XL",
+      "color": "Trắng",
+      "category": 2
     },
     {
       "id": 11,
       "name": "Váy nữ sexy",
       "price": 34255,
       "imgUrl": "https://helenkieu.vn/wp-content/uploads/2021/12/V21100020-Vay-lien-than-co-V-Gam-den-sat-nach-1656000-V190736VE-Ao-vest-1-khuy-tay-lo-1690000-2.jpg",
-      "size": "gưerger",
-      "color": "ưergwer",
-      "category": 1
+      "size": "L",
+      "color": "Đen",
+      "category": 2
     },
     {
       "id": 12,
       "name": "Váy xòe nữ",
       "price": 34255,
       "imgUrl": "https://menina.vn/wp-content/uploads/2021/11/cach-mix-do-voi-ao-vest-nu-14.jpg",
-      "size": "gưerger",
-      "color": "ưergwer",
-      "category": 1
+      "size": "L",
+      "color": "Trắng",
+      "category": 2
     },
     {
       "id": 13,
       "name": "Váy nữ đẹp",
       "price": 3425000,
       "imgUrl": "https://chancosvn.com/wp-content/uploads/2022/10/chan-vay-phoi-ao-so-mi-chan-vay-chu-a.jpg",
-      "size": "gưerger",
-      "color": "ưergwer",
-      "category": 1
-    },
-    {
-      "id": 14,
-      "name": "ẻwweg",
-      "price": 12312,
-      "imgUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/e9/d0/8b/113cc2f2a44974ddf1036b5a8293b492.jpg",
-      "size": "jvgnb",
-      "color": "j,vh",
-      "category": 1
-    },
-    {
-      "id": 15,
-      "name": "èdfed",
-      "price": 213123,
-      "imgUrl": "https://helenkieu.vn/wp-content/uploads/2021/12/V21100020-Vay-lien-than-co-V-Gam-den-sat-nach-1656000-V190736VE-Ao-vest-1-khuy-tay-lo-1690000-2.jpg",
-      "size": "ỵchj",
-      "color": "otugkhvm",
-      "category": 1
-    },
-    {
-      "id": 16,
-      "name": "dgfsdfg",
-      "price": 23423,
-      "imgUrl": "sdfgsdf",
-      "size": "sdfg",
-      "color": "ưerg",
-      "category": 1
-    },
-    {
-      "id": 17,
-      "name": "dtdft",
-      "price": 4646,
-      "imgUrl": "tdftdt",
-      "size": "6545",
-      "color": "fzdf",
-      "category": 1
-    },
-    {
-      "id": 18,
-      "name": "dffsf",
-      "price": 4545,
-      "imgUrl": "dfsdfs",
-      "size": "4545",
-      "color": "sfdsdfs",
-      "category": 1
-    },
-    {
-      "id": 19,
-      "name": "đâsd",
-      "price": 343434,
-      "imgUrl": "34334",
-      "size": "4343434",
-      "color": "343434",
-      "category": 1
-    },
-    {
-      "id": 20,
-      "name": "45454",
-      "price": 454545,
-      "imgUrl": "535454",
-      "size": "454545",
-      "color": "545454",
-      "category": 0
-    },
-    {
-      "id": 21,
-      "name": "sdf",
-      "price": 5656,
-      "imgUrl": "dfdfdg",
-      "size": "fdgfgdfg",
-      "color": "gdfgdfg",
-      "category": 0
-    },
-    {
-      "id": 22,
-      "name": "dfdfsd",
-      "price": 343434,
-      "imgUrl": "sdfsfs",
-      "size": "fd3343",
-      "color": "34343",
-      "category": 0
-    },
-    {
-      "id": 23,
-      "name": "fsrers",
-      "price": 454545,
-      "imgUrl": "sdfsd",
-      "size": "545454",
-      "color": "454545",
-      "category": 0
-    },
-    {
-      "id": 24,
-      "name": "dsfdf",
-      "price": 34334,
-      "imgUrl": "fdsfsdf",
-      "size": "dfsdf",
-      "color": "sdfsdf",
-      "category": 0
-    },
-    {
-      "id": 25,
-      "name": "đsfsdfsd",
-      "price": 43434,
-      "imgUrl": "dsfdfs",
-      "size": "34343",
-      "color": "434343",
-      "category": 0
-    },
-    {
-      "id": 26,
-      "name": "dfsdfsd",
-      "price": 454545,
-      "imgUrl": "fsdfsdfs",
-      "size": "dfsfsdf",
-      "color": "fsdfsdf",
-      "category": 0
-    },
-    {
-      "id": 27,
-      "name": "fsdfdsfs",
-      "price": 454545,
-      "imgUrl": "sdfsdf",
-      "size": "4554",
-      "color": "45454",
-      "category": 0
-    }
+      "size": "S",
+      "color": "Đem",
+      "category": 2
+    }  
   ],
   "categories": [
     {
