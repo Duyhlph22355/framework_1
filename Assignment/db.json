@@ -52,7 +52,7 @@
       "imgUrl": "https://bizweb.dktcdn.net/thumb/large/100/438/408/products/tsm5231-vag-3.jpg?v=1652520442000",
       "size": "L",
       "color": "Vàng",
-      "category": 3
+      "category": 1
     },
     {
       "id": 7,
@@ -61,7 +61,124 @@
       "imgUrl": "https://bizweb.dktcdn.net/thumb/large/100/438/408/products/tsm6095-dn1-13.jpg?v=1684830777000",
       "size": "L",
       "color": "Đen",
+      "category": 1
+    },
+    {
+      "id": 8,
+      "name": "Váy nữ xinh",
+      "price": 1231231,
+      "imgUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/e9/d0/8b/113cc2f2a44974ddf1036b5a8293b492.jpg",
+      "size": "L",
+      "color": "Cam",
       "category": 2
+    },
+    {
+      "id": 9,
+      "name": "Váy nữ oni bayby",
+      "price": 200000,
+      "imgUrl": "https://file.hstatic.net/1000197303/file/chan-vay-chu-a-dai-ket-hop-voi-ao-blouse_20bb49581f804bd58668ffdd42b45f80.jpg",
+      "size": "M",
+      "color": "Trắng",
+      "category": 2
+    },
+    {
+      "id": 10,
+      "name": "Váy hiện đại",
+      "price": 34255,
+      "imgUrl": "https://file.hstatic.net/1000197303/file/oi-ao-croptop-la-cach-phoi-do-cho-nguoi-lun-bap-chan-to-hieu-qua-nhat-_d4916fb4e28f4e59bc2296c1ff71ee00.jpg",
+      "size": "XL",
+      "color": "Trắng",
+      "category": 2
+    },
+    {
+      "id": 11,
+      "name": "Váy nữ sexy",
+      "price": 34255,
+      "imgUrl": "https://helenkieu.vn/wp-content/uploads/2021/12/V21100020-Vay-lien-than-co-V-Gam-den-sat-nach-1656000-V190736VE-Ao-vest-1-khuy-tay-lo-1690000-2.jpg",
+      "size": "L",
+      "color": "Đen",
+      "category": 2
+    },
+    {
+      "id": 19,
+      "name": "Váy xòe nữ",
+      "price": 34255,
+      "imgUrl": "https://menina.vn/wp-content/uploads/2021/11/cach-mix-do-voi-ao-vest-nu-14.jpg",
+      "size": "L",
+      "color": "Trắng",
+      "category": 2
+    },
+    {
+      "id": 20,
+      "name": "Váy nữ đẹp",
+      "price": 3425000,
+      "imgUrl": "https://chancosvn.com/wp-content/uploads/2022/10/chan-vay-phoi-ao-so-mi-chan-vay-chu-a.jpg",
+      "size": "S",
+      "color": "Đem",
+      "category": 2
+    },
+    {
+      "id": 12,
+      "name": "Áo Xanh",
+      "price": 200000,
+      "imgUrl": "https://salt.tikicdn.com/cache/w1200/ts/product/8a/a4/19/22f686157264d6a2b8cdc1511997c5ca.jpg",
+      "size": "XL",
+      "color": "Trắng",
+      "category": 3
+    },
+    {
+      "id": 13,
+      "name": "Áo Khá Bảnh",
+      "price": 300000,
+      "imgUrl": "https://2sao.vietnamnetjsc.vn/images/2019/04/02/11/51/kha-banh-8.jpg",
+      "size": "XL",
+      "color": "Trắng đen",
+      "category": 3
+    },
+    {
+      "id": 14,
+      "name": "Áo Tù",
+      "price": 350000,
+      "imgUrl": "https://static2.yan.vn/YanNews/2167221/201905/anh-em-dua-nha-mac-bo-do-tu-nhan-duoc-bay-ban-ben-nhat-2117ddfc.jpg",
+      "size": "XL",
+      "color": "Xanh",
+      "category": 3
+    },
+    {
+      "id": 15,
+      "name": "Áo Boy Phố",
+      "price": 1150000,
+      "imgUrl": "https://salt.tikicdn.com/cache/w1200/ts/product/f0/32/6f/b9341b86a3d7c415ac21a2ea9901715e.jpg",
+      "size": "XXL",
+      "color": "Xanh",
+      "category": 3
+    },
+    {
+      "id": 16,
+      "name": "Áo Siêu nhân",
+      "price": 160000,
+      "imgUrl": "https://vn-live-01.slatic.net/p/0ef989476c7f135e1fc4475aecc13884.png",
+      "size": "L",
+      "color": "Vàng",
+      "category": 3
+    },
+    {
+      "id": 17,
+      "name": "Áo ",
+      "price": 235000,
+      "imgUrl": "https://salt.tikicdn.com/ts/tmp/04/8b/e4/50b13a11fd281af836b4f3b77b869bb2.jpg",
+      "size": "L",
+      "color": "Đen",
+      "category": 3
+    },
+    {
+      "id": 18,
+      "name": "Áo ",
+      "price": 160000,
+      "imgUrl": "https://salt.tikicdn.com/cache/w1200/ts/product/f0/32/6f/b9341b86a3d7c415ac21a2ea9901715e.jpg",
+      "size": "L",
+      "color": "Vàng",
+      "category": 3
     }
   ],
   "categories": [
@@ -101,6 +218,7 @@
       "size_product":"XL",
       "color_product":"trắng",
       "price_product": 123,
+      "count_product": 123,
       "total_money":124124,
       "id_user":1
     }

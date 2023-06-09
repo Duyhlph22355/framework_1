@@ -17,8 +17,8 @@ export class ProductAddComponent {
     price: [0, [Validators.required, Validators.min(0.01)]],
     imgUrl: ['', [Validators.required]],
     size: ['', [Validators.required]],
-    color: ['', [Validators.required]],
-    category: [1, [Validators.required]]
+    category: [2],
+    color: ['', [Validators.required]]
   });
   CategoryList: ICategories[] = [];
   constructor(
@@ -39,6 +39,8 @@ export class ProductAddComponent {
     })
   }
   onHandleSubmit() {
+    console.log(this.productForm.value);
+
     if (this.productForm.valid) {
 
     const product: IProduct = {

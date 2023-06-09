@@ -18,7 +18,7 @@ export class ProductUpdateComponent {
     imgUrl: ['', [Validators.required]],
     size: ['', [Validators.required]],
     color: ['', [Validators.required]],
-    category: [1, [Validators.required]]
+    category: [2]
   });
   CategoryList: ICategories[] = [];
   constructor(
@@ -34,7 +34,6 @@ export class ProductUpdateComponent {
         (data) => {
           console.log(data);
           this.product = data;
-
           this.productForm.patchValue({
             name: data.name,
             price: data.price,

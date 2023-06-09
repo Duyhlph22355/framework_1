@@ -79,7 +79,7 @@
 
 
         <div class="card flex justify-content-center">
-          <Select formControlName="category" class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm h-[35px]" containerStyleClass="w-full" placeholder="Select Item">
+          <Select class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm h-[35px]" formControlName="category">
             <option [value]="cate.id" *ngFor="let cate of CategoryList">{{cate.name}}</option>
           </Select>
           <!-- <div *ngIf="validate.name.errors" [hidden]="!validate.name.touched">

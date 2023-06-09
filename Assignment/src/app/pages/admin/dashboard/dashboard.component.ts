@@ -23,19 +23,19 @@ export class DashboardComponent implements OnInit {
                   label: 'Thời Trang Nam',
                   backgroundColor: documentStyle.getPropertyValue('--blue-500'),
                   borderColor: documentStyle.getPropertyValue('--blue-500'),
-                  data: [65, 59, 80, 81, 56, 55, 40]
+                  data: [6500000, 5900000, 8000000, 8100000, 5600000, 5500000, 4000000]
               },
               {
                   label: 'Thời Trang Nữ',
                   backgroundColor: documentStyle.getPropertyValue('--pink-500'),
                   borderColor: documentStyle.getPropertyValue('--pink-500'),
-                  data: [28, 48, 40, 19, 86, 27, 90]
+                  data: [2800000, 4800000, 4000000, 10036000, 8600000, 2700000, 9000000]
               },
               {
                 label: 'Thời Trang Trẻ Em',
                 backgroundColor: documentStyle.getPropertyValue('--green-500'),
                 borderColor: documentStyle.getPropertyValue('--green-500'),
-                data: [53, 32, 17, 78, 56, 65, 69]
+                data: [5300000, 3200000, 1700000, 7800000, 5600000, 6500000, 6900000]
             }
           ]
       };

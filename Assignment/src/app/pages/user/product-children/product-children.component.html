@@ -1,1 +1,19 @@
-<p>ĐÂY LÀ TRANG SẢN PHẨM CHO TRẺ EM</p>
+<div class="grid grid-cols-4 gap-7 mt-[50px]">
+  <ng-container *ngFor="let product of products">
+    <ng-container *ngIf="product.category == 3">
+      <div>
+        <a [routerLink]="'/product/'+ product.id" class="group block overflow-hidden">
+          <div class="relative h-[350px] sm:h-[450px]">
+            <img src="{{product.imgUrl}}" alt="" class="absolute inset-0 h-full w-full object-cover opacity-100" />
+          </div>
+          <div class="relative bg-white pt-3 text-center">
+            <h3 class="text-sm text-gray-700 group-hover:underline group-hover:underline-offset-4">
+              {{product.name}}
+            </h3>
+            <p class="mt-1.5 tracking-wide text-gray-900">{{product.price | currency:'VND'}}</p>
+          </div>
+        </a>
+      </div>
+    </ng-container>
+  </ng-container>
+</div>
