@@ -209,18 +209,32 @@
       "email": "ld@gmail.com",
       "password": "123456",
       "role": "member"
+    },
+    {
+      "id": "Q5G0yDP",
+      "name": ", nam",
+      "email": "nam@gmail.com",
+      "password": "123456",
+      "role": "member"
+    },
+    {
+      "id": "TsZ2Qh9",
+      "name": "tuan nam",
+      "email": "tuannam@gmail.com",
+      "password": "123456",
+      "role": "member"
     }
   ],
-  "cart":[
+  "cart": [
     {
       "id": 1,
-      "name_product":"áo trắng",
-      "size_product":"XL",
-      "color_product":"trắng",
+      "name_product": "áo trắng",
+      "size_product": "XL",
+      "color_product": "trắng",
       "price_product": 123,
       "count_product": 123,
-      "total_money":124124,
-      "id_user":1
+      "total_money": 124124,
+      "id_user": 1
     }
   ]
 }

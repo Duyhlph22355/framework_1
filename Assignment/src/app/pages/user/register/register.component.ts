@@ -21,7 +21,6 @@ export class RegisterComponent {
     "name": ['', [Validators.required]],
     "email": ['', [Validators.required, Validators.email]],
     "password": ['', [Validators.required, Validators.minLength(6)]],
-    "confirm_password": ['',[Validators.required]]
   })
   get validate(){
     return this.registerForm.controls
@@ -40,7 +39,6 @@ export class RegisterComponent {
         this.router.navigate(['/login']);
       });
     }
-  console.log(this.registerForm.value);
 
   }
 }
