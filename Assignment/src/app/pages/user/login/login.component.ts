@@ -28,21 +28,21 @@ export class LoginComponent {
       const email = this.loginForm.value.email || '';
       const password = this.loginForm.value.password || '';
 
-      this.authService.getUserByEmail(email).subscribe((user) => {
-        console.log(user.id);
+      this.router.navigate(['/home']);
+      alert('Đăng nhập thành công');
 
-        // Kiểm tra thông tin đăng nhập hợp lệ
-        // if (user.email === email && user.password === password) {
-        //   // Lưu thông tin người dùng vào local storage hoặc session storage
-        //   localStorage.setItem('currentUser', JSON.stringify(user));
+      // this.authService.getUserByEmail(email).subscribe((user) => {
+      //   if (user.email === email && user.password === password) {
+      //     // Lưu thông tin người dùng vào local storage hoặc session storage
+      //     localStorage.setItem('currentUser', JSON.stringify(user));
 
-        //   // Điều hướng đến trang chủ hoặc trang khác
-        //   this.router.navigate(['/home']);
-        // } else {
-        //   // Hiển thị thông báo lỗi
-        //   alert('Email hoặc mật khẩu không chính xác');
-        // }
-      });
+      //     // Điều hướng đến trang chủ hoặc trang khác
+      //     this.router.navigate(['/home']);
+      //   } else {
+      //     // Hiển thị thông báo lỗi
+      //     alert('Email hoặc mật khẩu không chính xác');
+      //   }
+      // });
     }
   }
 }
